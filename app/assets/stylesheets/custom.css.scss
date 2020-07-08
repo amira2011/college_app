@@ -1,0 +1,33 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+.navbar {
+
+background-color: #FDF6EA !important;
+
+}
+
+
+
+.navbar-brand {
+
+font-size: 3rem;
+
+}
+
+
+
+h1 {
+
+color: red;
+
+}
+
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 80px;
+    height: 80px;
+    margin-right: 1px;
+    margin-top: 1px;    /* if you want it vertically middle of the navbar. */
+}
