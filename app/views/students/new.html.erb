@@ -1,3 +1,19 @@
+
+
+<h3> Import Students </h3>
+<%= form_tag import_students_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Upload Students" %>
+<% end %>
+
+<br>
+
+OR
+<br>
+<br>
+<br>
+<br>
+
 <h2> New Student Form </h2>
 <%= form_for @student do |form| %>
 

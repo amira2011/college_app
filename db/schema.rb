@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_07_08_102413) do
 
-  create_table "fee_structures", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "fee_structures", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "admission_year"
     t.string "category"
     t.decimal "tution_fee", precision: 10
@@ -23,12 +23,12 @@ ActiveRecord::Schema.define(version: 2020_07_08_102413) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "receipts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "receipts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "students", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+  create_table "students", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.string "admission_year"
     t.string "category"
