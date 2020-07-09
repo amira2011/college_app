@@ -1,0 +1,65 @@
+<h2> New Student Form </h2>
+<%= form_for @student do |form| %>
+
+
+
+<table class="table">
+<tr>
+
+  <td>  Name</td>
+  <td>  <%= form.text_field :name %></td>
+
+</tr>
+
+<tr>
+
+  <td>  Admission_Year</td>
+
+</tr>
+
+
+<tr>
+
+  <td>  Category</td>
+  <td>  <%= form.text_field :category %></td>
+
+</tr>
+
+
+<tr>
+
+  <td>  Branch</td>
+  <td>  <%= form.text_field :branch %></td>
+
+</tr>
+
+
+<tr>
+
+  <td>  Mobile</td>
+  <td>  <%= form.telephone_field :mobile %></td>
+
+</tr>
+
+<tr>
+
+  <td>  Email</td>
+  <td>  <%= form.email_field :email %></td>
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+  <div class="actions">
+    <td>
+    <%= form.submit %>
+    </td>
+  </div>
+  </tr>
+  </table>
+<% end %>
